@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<style type="text/css">
+		body{
+			color: #FDFFFC;
+			background-color: #011627; 
+			border :40px solid lightblue;
+			border-top: 0px;
+			margin: 0px;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		p{
+			text-align: center;
+		}
+
+	.btn-1{
+		width: 20%;
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 10px;
+		margin: 8px 0px 40px 550px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	textarea {
+		width: 80%;
+		height: 100px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		margin: 30px 0px 20px 120px;
+		border-radius: 4px;
+		background-color: #f8f8f8;
+		font-size: 16px;
+		resize: none;
+	}
+	</style>
+
+<script>
+	config  = {
+    enableTime: true,
+	}
+	flatpicker("input[time=datetime-local]", config);
+</script>
+
+</head>
+<body>
+
+<h1>Thanks for signing up!</h1>
+
+<p>Enter the Task on a specific date & time You Are going to Perform : </p>
+
+<div class="mx-auto col-5" style="margin-top: 10erm;">
+	<h1 class="text-ceneter mb-3 text-secondory">DateTime Picker</h1>
+
+	<form action="#">
+		<input type="datetime-local" class="form-control" placeholder="Select DateTime">
+	</form>
+</div>
+
+<textarea name="" id="" cols="30" rows="10" placeholder="Task Description"></textarea>
+
+<a href="Description-detail.html">
+	<input type="submit" value="Submit" class="btn-1" >
+</a> 
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
+</html>
